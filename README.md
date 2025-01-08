@@ -12,4 +12,5 @@ We will create a sentence search and retrieval system:
 3) This data would then get annotated as per the criteria in point 1
 4) The system will then serve and listen for the user input for finding the relevant data
 
-
+Phase 1:
+1) We will look for sentences where the word occurs and the associated page number
