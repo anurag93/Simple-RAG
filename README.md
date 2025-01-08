@@ -14,3 +14,7 @@ We will create a sentence search and retrieval system:
 
 Phase 1:
 1) We will look for sentences where the word occurs and the associated page number
+
+
+Phase 2:
+1) Find me the page in which the word occurs the most
