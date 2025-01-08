@@ -1,8 +1,8 @@
-from rag_service import insert_batch, find_words
+from rag_service import insert_batch, find_words, frequency
 
 def test_insert():
     has_inserted = insert_batch("book.json")
-    if has_inserted == True
+    return has_inserted == True
 
 def test_find(words):
     for word,page in words.items():
@@ -17,6 +17,12 @@ def test_find_none(words):
             return False
     return True
 
+def find_occurance(words):
+    for word, page in words.items():
+        if frequency(word) != page:
+            return False
+    return True
+
 
 test_insert()
 test_find({
@@ -28,3 +34,10 @@ test_find({
 })
 
 test_find_none(["stumbled", "clever", "marveled"])
+
+find_occurance({
+    "Orion": "1",
+    "Aurora": "7",
+    "Moonlit": "2",
+    "Valley": "2"
+})
